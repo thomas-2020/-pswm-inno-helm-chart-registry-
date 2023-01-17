@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  microservicesruntime:
+  - apiVersion: v2
+    appVersion: "10.15"
+    created: "2023-01-17T13:52:47.405942064+01:00"
+    description: A Microservices Runtime (MSR) Helm chart for Kubernetes
+    digest: 19eaae73bff0bfc4fbc409a77b37a4e3e263a6c11bd6030b8e54f3113abaf62b
+    name: microservicesruntime
+    type: application
+    urls:
+    - https://pages.github.softwareag.com/PS/pswm-inno-helm-chart-registry/microservicesruntime-1.0.0.tgz
+    version: 1.0.0
+  service-auditing-monitor:
+  - apiVersion: v2
+    appVersion: "10.15"
+    created: "2023-01-17T13:52:47.407010464+01:00"
+    description: A Service Auditing Monitor Helm chart for Kubernetes
+    digest: 7e89c5a743bb470fb28bf45d66dee3787ff6ee39463b16c6bbacf8a761d060d1
+    name: service-auditing-monitor
+    type: application
+    urls:
+    - https://pages.github.softwareag.com/PS/pswm-inno-helm-chart-registry/service-auditing-monitor-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-01-17T13:52:47.403685553+01:00"
