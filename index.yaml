@@ -9,7 +9,7 @@ entries:
     name: microservicesruntime
     type: application
     urls:
-    - https://thomas-2020.github.io/PS/pswm-inno-helm-chart-registry/microservicesruntime-1.0.0.tgz
+    - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/microservicesruntime-1.0.0.tgz
     version: 1.0.0
   service-auditing-monitor:
   - apiVersion: v2
@@ -20,6 +20,6 @@ entries:
     name: service-auditing-monitor
     type: application
     urls:
-    - https://thomas-2020.github.io/PS/pswm-inno-helm-chart-registry/service-auditing-monitor-1.0.0.tgz
+    - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/service-auditing-monitor-1.0.0.tgz
     version: 1.0.0
 generated: "2023-01-17T13:52:47.403685553+01:00"
