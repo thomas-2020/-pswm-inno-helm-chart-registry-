@@ -1,20 +1,52 @@
 apiVersion: v1
 entries:
+  api-gateway:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-06-05T18:31:18.881410269+02:00"
+    description: APIGateway Helm chart for Kubernetes
+    digest: a44f885625454546e7bb89e75145572c9059c9ca953f6a12a4a6ffca76992404
+    name: api-gateway
+    urls:
+    - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/api-gateway-0.1.0.tgz
+    version: 0.1.0
+  devportal:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-06-05T18:31:18.883532992+02:00"
+    description: A Helm chart for Kubernetes
+    digest: a4d26d01f39236a156f3f0a5f161e3d94be30cfaf7295889792e458e563bf3f0
+    name: devportal
+    type: application
+    urls:
+    - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/devportal-0.1.0.tgz
+    version: 0.1.0
   microservicesruntime:
   - apiVersion: v2
     appVersion: "10.15"
-    created: "2023-01-17T13:52:47.405942064+01:00"
+    created: "2023-06-05T18:31:18.884717002+02:00"
     description: A Microservices Runtime (MSR) Helm chart for Kubernetes
-    digest: 19eaae73bff0bfc4fbc409a77b37a4e3e263a6c11bd6030b8e54f3113abaf62b
+    digest: f7062f2ba6971fc8dec948fe3e9695f4caa048db5e8b9eeb642abb068c55ad38
     name: microservicesruntime
     type: application
     urls:
     - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/microservicesruntime-1.0.0.tgz
     version: 1.0.0
+  mywebmethodsserver:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-06-05T18:31:18.885552348+02:00"
+    description: A Helm chart for Kubernetes
+    digest: b678a38c6279e0169096e0b0144057494a4957bcdfb6ed417f8987a572902bd7
+    name: mywebmethodsserver
+    type: application
+    urls:
+    - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/mywebmethodsserver-0.1.0.tgz
+    version: 0.1.0
   service-auditing-monitor:
   - apiVersion: v2
     appVersion: "10.15"
-    created: "2023-01-17T13:52:47.407010464+01:00"
+    created: "2023-06-05T18:31:18.886654219+02:00"
     description: A Service Auditing Monitor Helm chart for Kubernetes
     digest: 7e89c5a743bb470fb28bf45d66dee3787ff6ee39463b16c6bbacf8a761d060d1
     name: service-auditing-monitor
@@ -22,4 +54,15 @@ entries:
     urls:
     - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/service-auditing-monitor-1.0.0.tgz
     version: 1.0.0
-generated: "2023-01-17T13:52:47.403685553+01:00"
+  simple-um:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-06-05T18:31:18.887339831+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 9c4c1dd4607582b3842de38a79fc3a8ab0bd698459651d43c0f6d07c0447c19a
+    name: simple-um
+    type: application
+    urls:
+    - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/simple-um-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-06-05T18:31:18.877815169+02:00"
