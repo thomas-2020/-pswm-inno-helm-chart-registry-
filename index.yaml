@@ -3,7 +3,7 @@ entries:
   api-gateway:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-06-06T15:35:11.204969494+02:00"
+    created: "2023-06-26T15:12:47.511745731+02:00"
     description: APIGateway Helm chart for Kubernetes
     digest: a44f885625454546e7bb89e75145572c9059c9ca953f6a12a4a6ffca76992404
     name: api-gateway
@@ -13,7 +13,7 @@ entries:
   devportal:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-06T15:35:11.21056406+02:00"
+    created: "2023-06-26T15:12:47.513617351+02:00"
     description: A Helm chart for Kubernetes
     digest: a4d26d01f39236a156f3f0a5f161e3d94be30cfaf7295889792e458e563bf3f0
     name: devportal
@@ -24,7 +24,17 @@ entries:
   microservicesruntime:
   - apiVersion: v2
     appVersion: "10.15"
-    created: "2023-06-06T15:35:11.212036088+02:00"
+    created: "2023-06-26T15:12:47.516040506+02:00"
+    description: A Microservices Runtime (MSR) Helm chart for Kubernetes
+    digest: 04586950a4423619d2b2a10c2b0f2564fced5341c09576be445c0e86009aafd7
+    name: microservicesruntime
+    type: application
+    urls:
+    - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/microservicesruntime-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: "10.15"
+    created: "2023-06-26T15:12:47.51467154+02:00"
     description: A Microservices Runtime (MSR) Helm chart for Kubernetes
     digest: 8fc9ace10874e51742781028df144b6466379b6617a1799a56aadb9e3565cb28
     name: microservicesruntime
@@ -35,7 +45,7 @@ entries:
   mywebmethodsserver:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-06T15:35:11.212866076+02:00"
+    created: "2023-06-26T15:12:47.516723152+02:00"
     description: A Helm chart for Kubernetes
     digest: b678a38c6279e0169096e0b0144057494a4957bcdfb6ed417f8987a572902bd7
     name: mywebmethodsserver
@@ -46,7 +56,7 @@ entries:
   service-auditing-monitor:
   - apiVersion: v2
     appVersion: "10.15"
-    created: "2023-06-06T15:35:11.214300713+02:00"
+    created: "2023-06-26T15:12:47.517853373+02:00"
     description: A Service Auditing Monitor Helm chart for Kubernetes
     digest: 7e89c5a743bb470fb28bf45d66dee3787ff6ee39463b16c6bbacf8a761d060d1
     name: service-auditing-monitor
@@ -57,7 +67,7 @@ entries:
   simple-um:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-06-06T15:35:11.215070898+02:00"
+    created: "2023-06-26T15:12:47.51863294+02:00"
     description: A Helm chart for Kubernetes
     digest: 9c4c1dd4607582b3842de38a79fc3a8ab0bd698459651d43c0f6d07c0447c19a
     name: simple-um
@@ -65,4 +75,4 @@ entries:
     urls:
     - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/simple-um-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-06T15:35:11.200862073+02:00"
+generated: "2023-06-26T15:12:47.508449945+02:00"
