@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  microservicesruntime:
+  - apiVersion: v2
+    appVersion: "10.15"
+    created: "2023-07-07T12:44:15.619006844+02:00"
+    description: A Microservices Runtime (MSR) Helm chart for Kubernetes
+    digest: ee255f4b06013723c20ea8be32ba2e2ef72561059e32b2b07202f66f6a5bf952
+    name: microservicesruntime
+    type: application
+    urls:
+    - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/microservicesruntime-1.1.0.tgz
+    version: 1.1.0
+generated: "2023-07-07T12:44:15.616899866+02:00"
