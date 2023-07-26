@@ -1,6 +1,8 @@
-# MSR using kubernetes secrets
+# MSR using Kubernetes Secrets
 
-This example deploys a MSR that references a Kubernetes secret which is mounted to /etc/secrets on the container at startup. The secrets are referenced through the secret key names in the application properties file provided via a config map.
+This example deploys a MSR that references a Kubernetes secret which is mounted to /etc/secrets on the container at startup. The secrets are referenced through the secret key names in the application properties file provided via config map.
+
+More information about using secrets in Kubernetes for MSR are [here](https://documentation.softwareag.com/webmethods/integration_server/pie10-15/webhelp/pie-webhelp/index.html#page/pie-webhelp%2Fto-configuration_variables_for_docker_11.html%23wwID0ERXBM).
 
 ## Prerequisites
 

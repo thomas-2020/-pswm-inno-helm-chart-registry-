@@ -1,12 +1,12 @@
 # webMethods Microservices Runtime Helm Chart
 
-This Helm Chart installs and configures a Microservices Runtime (MSR) container.
+This Helm Chart installs and configures a Microservices Runtime (MSR) container. It is starting with a simple example and provides more complex scenarios in the *Examples for Use-cases* section.
 
 ## Prerequisites
 
 ### Image Pull Secret
 
-If you want to pull image from Software AG Containers Registry, create secret with your Software AG Containers Registry credentials ...
+If you want to pull image from [Software AG Containers Registry](https://containers.softwareag.com), create secret with your Software AG Containers Registry credentials ...
 
 ```
 kubectl create secret docker-registry sag-registry-credentials --docker-server=sagcr.azurecr.io --docker-username=<your-name> --docker-password=<your-pwd> --docker-email=<your-email>
@@ -28,9 +28,9 @@ If you need to create an own image with additional webMethods product components
 
 ### Licenses
 
-API Gateway requires a license file. These license is supposed to be provided as configmap.
+Microservices Runtime requires a license file. These license is supposed to be provided as configmap.
 
-Hence before running `helm install` create the configmap:
+Hence before running `helm install`, create the configmap:
 
 ```
 kubectl create configmap microservicesruntime-license-key --from-file=licenseKey.xml=<your path and filename to Microservices Runtime license file>
@@ -42,8 +42,9 @@ Sub-folder `examples` contains some *values* examples for more use-cases. To use
 
 | Use-case | Description |
 |-----|------|
-| [msr-post-init](../examples/msr-post-init/README.md) | Performs post init actions after the startup |
-| [msr-push-doc-types](../examples/msr-push-doc-typesREADME.md) | Pushing IS Document Types after startup |
+| [external-postgresql-db](../examples/external-postgresql-db/README.md) | Using MSR with external PostgresQL database |
+| [msr-post-init](../examples/msr-post-init/README.md) | Performs *post-init* actions after startup, e.g. deploy assets to Universal Messaging |
+| [msr-push-doc-types](../examples/msr-push-doc-types/README.md) | Pushing IS Document Types after startup |
 | [msr-statefulset-csq](../examples/msr-statefulset-csq/README.md) | Deploy MSR with stateful set |
 | [msr-using-secrets](../examples/msr-using-secrets/README.md) | Using secrets in application properties  |
 | [msr-with-extra-ports](../examples/msr-with-extra-ports/README.md) | Define additional ports in MSR deployment |
@@ -55,29 +56,20 @@ Sub-folder `examples` contains some *values* examples for more use-cases. To use
 
 Install release with pulling image and setting secret (to pull image) ...
 
-```
+```shell
 helm install wm-msr microservicesruntime          \
   --set imagePullSecrets=sag-registry-credentials \
 ```
 
-... with database, e.g. PostgresQL ...
-
-```
-  --set "microservicesruntime.jdbc.data.dbURL=jdbc:wm:postgresql://wm-db-postgresql:5432;databaseName=wmdb"   \
-  --set "microservicesruntime.jdbc.data.userid=wm"                                                                             \
-  --set "microservicesruntime.jdbc.data.password=<Password of wm user>"                                                        \
-  --set "microservicesruntime.jdbc.data.driverAlias=DataDirect Connect JDBC PostgreSQL Driver"                                 \
-```
-
 ... define domain name of Ingress service host ...
 
-```
+```shell
   --set "ingress.domain="
 ```
 
 ... define hostname of Ingress service ...
 
-```
+```shell
   --set "ingress.hosts[0].host=my-msr"                \
   --set "ingress.hosts[0].paths[0].path=/"            \
   --set "ingress.hosts[0].paths[0].pathType=Prefix"   \
@@ -86,7 +78,7 @@ helm install wm-msr microservicesruntime          \
 
 ... instead of using default image, use your own ...
 
-```
+```shell
   --set "image.repository=<Your-Docker-registry>/wm-msr-db" \
   --set "image.tag=10.15"
 ```

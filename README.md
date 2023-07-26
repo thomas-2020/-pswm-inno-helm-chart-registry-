@@ -1,8 +1,8 @@
-# Helm Chart Repo for Software AG webMethods Components
+# Helm Chart Repository for Software AG webMethods Components
 
-This repository contains a collection of Helm charts for various webMethods components.
+This repository contains a collection of Helm charts for various webMethods components. The section *Available Charts* provides more information about the contents. We test and develop all Helm Charts for webMethods release version 10.15.
 
-## Adding the Helm Chart Repo
+## Adding the Helm Chart Repository
 
 To add this Helm chart repository to your Helm CLI, run the following command:
 

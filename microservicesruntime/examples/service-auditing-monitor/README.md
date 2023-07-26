@@ -17,7 +17,7 @@ The Service Auditing Monitor requires following deployments minimal:
 
 The Service Auditing Monitor use the `microservicesruntime` Helm Chart. See [README](../../helm/README.md) to solve the prerequisites.
 
-Unfortunately, If you want to use a Kubernetes cron job to archive the auditing data, you must deploy a My webMethods Server and configure WmMonitor package.
+Unfortunately, If you want to use a Kubernetes cron job to archive the auditing data, you must deploy a [My webMethods Server](../../../mywebmethodsserver/helm/README.md) and configure WmMonitor package. The configuration of WmMonitor will be provided in *Values* section.
 
 ## Values
 

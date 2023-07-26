@@ -1,14 +1,24 @@
 apiVersion: v1
 entries:
+  api-gateway:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2023-07-26T10:19:27.568448593+02:00"
+    description: APIGateway Helm chart for Kubernetes
+    digest: f80d6973848056e54a6fc480e5cd7c00f7727ad770c28725517f24bc3b0b1246
+    name: api-gateway
+    urls:
+    - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/api-gateway-0.1.0.tgz
+    version: 0.1.0
   microservicesruntime:
   - apiVersion: v2
     appVersion: "10.15"
-    created: "2023-07-20T11:22:22.271399379+02:00"
+    created: "2023-07-26T10:19:27.572036368+02:00"
     description: A Microservices Runtime (MSR) Helm chart for Kubernetes
-    digest: db0a87217b98aa40e661eb88337037e9b2ff4df463947221bb370917d10de128
+    digest: 60abe74547b1dec434c30c5823296870db0f95e039495367541e61cbb805a926
     name: microservicesruntime
     type: application
     urls:
     - https://thomas-2020.github.io/pswm-inno-helm-chart-registry/microservicesruntime-1.1.0.tgz
     version: 1.1.0
-generated: "2023-07-20T11:22:22.269880542+02:00"
+generated: "2023-07-26T10:19:27.564310279+02:00"
